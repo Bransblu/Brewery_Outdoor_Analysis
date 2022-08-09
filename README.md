@@ -13,7 +13,8 @@ Our team believes there is potential for retail growth based on locations in the
 - What is the growth potential for brewery expansion based on outdoor clothing locations?
 
 ### Collaborators
-Brandon Clark
-Brandon Driver
-Tim Nilson
-Warren Pavlat
+
+- Brandon Clark
+- Brandon Driver
+- Tim Nilson
+- Warren Pavlat
