@@ -1,7 +1,7 @@
 # Brewery_Outdoor_Analysis
 ### Topic
 
-Local craft breweries and their correlation to prominant outdoor clothing brands.
+Local craft breweries and their correlation to prominent outdoor clothing brands.
 #### Purpose 
 
 Our team believes there is potential for retail growth based on locations in the nearby vicinity of breweries. The increasing popularity of both breweries and outdoor clothing establishments can lead to data that could assist future development.
@@ -16,5 +16,5 @@ Our team believes there is potential for retail growth based on locations in the
 
 - Brandon Clark
 - Brandon Driver
-- Tim Nilson
+- Tim Nilsen
 - Warren Pavlat
