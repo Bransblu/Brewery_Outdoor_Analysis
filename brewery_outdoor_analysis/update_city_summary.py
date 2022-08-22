@@ -1,4 +1,3 @@
-from unicodedata import name
 import pandas as pd
 
 from database_connection import ENGINE
@@ -25,4 +24,3 @@ def update_city_summary():
 
 if __name__ == '__main__':
     update_city_summary()
-    print('city_summary table updated')
