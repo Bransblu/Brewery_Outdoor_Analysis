@@ -13,7 +13,7 @@ def update_city_summary():
 
     df['population'] = df['population'].astype('int')
 
-    query.close() 
+    query.close()
 
     df.to_sql(
         'city_summary',
