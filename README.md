@@ -1,4 +1,5 @@
 # Brewery_Outdoor_Analysis
+
 ### Topic
 
 Local craft breweries and their correlation to prominent outdoor clothing brands.
@@ -26,3 +27,4 @@ Our team believes there is potential for retail growth based on locations in the
 - Brandon Driver
 - Tim Nilsen
 - Warren Pavlat
+
