@@ -25,8 +25,7 @@ CREATE TABLE zip_code_database_raw (
 /*
 - clean up unneeded data: 
   - exclude decommissioned zip codes, 
-  - only keep standard zip codes, 
-  - only keep common, 5-digit zip codes
+  - only keep standard zip codes
 */
 CREATE TABLE zip_codes_cleaned AS (
     SELECT 
@@ -40,6 +39,5 @@ CREATE TABLE zip_codes_cleaned AS (
 	FROM zip_code_database_raw
 	WHERE decommissioned = 0
 	  AND type = 'STANDARD'
-	  AND LENGTH(zip::TEXT) = 5
 )
 ;
