@@ -1,5 +1,5 @@
 with breweries_cleaned as (
-    SELECT DISTINCT ON (yelp_id) 
+    SELECT DISTINCT 
          yelp_id,
 	       name, 
          original_search_city,
@@ -11,7 +11,7 @@ with breweries_cleaned as (
 ),
 
 outdoor_stores_cleaned as (
-    SELECT DISTINCT ON (yelp_id) 
+    SELECT DISTINCT 
          yelp_id,
 	       name, 
          original_search_city,
@@ -30,7 +30,7 @@ demographic_summary as (
 	     MIN(income.total_income)::INTEGER as min_income,
 	     MAX(income.total_income)::INTEGER as max_income, 
 	     PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as median_income,
-	     PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as    first_quartile_income,
+	     PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as first_quartile_income,
 	     PERCENTILE_CONT(0.75) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as third_quartile_income
 	FROM zip_codes_cleaned 
 	JOIN income_data income
@@ -118,4 +118,3 @@ final as ( -- filter for top US cities
 
 SELECT *
 FROM final
-ORDER BY breweries_mean_rating
