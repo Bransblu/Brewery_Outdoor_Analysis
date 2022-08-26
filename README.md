@@ -23,18 +23,18 @@ Our team believes there is potential for retail growth based on locations in the
 
 ## Data Sources
 
-**Yelp**
+#### **Yelp**
 
-Using `yelpapi` 
+Using the [`yelpapi`](https://github.com/lanl/yelpapi) python package, we queried business information from the Yelp [`business_search`](https://www.yelp.com/developers/documentation/v3/business_search) endpoint. 
 
-**IRS Data**
+#### **IRS Data**
 IRS SOI Tax Stats - Individual Income Tax Statistics from 2019, available here: 
 https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2019-zip-code-data-soi
  
 CSV of data directly accessed here: 
 https://www.irs.gov/pub/irs-soi/19zpallagi.csv
 
-**Zip Code Dataset**
+#### **Zip Code Dataset**
 Includes population data, used to create our top 1000 cities table.
 https://www.unitedstateszipcodes.org/zip-code-database/
 
