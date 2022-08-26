@@ -10,8 +10,8 @@ Our team believes there is potential for retail growth based on locations in the
 ## Possible questions to answer
 
 - Is there a strong current correlation between breweries and outdoor clothing stores?
-- What is the growth potential for clothing store expansion based on brewery locations?
-- What is the growth potential for brewery expansion based on outdoor clothing locations?
+- What is the potential market opportunity for clothing store expansion based on brewery locations?
+- What is the potential market opportunity for brewery expansion based on outdoor clothing locations?
 
 ## Machine Learning Model
 
@@ -20,6 +20,40 @@ Our team believes there is potential for retail growth based on locations in the
 *  The importance of correlation between breweries and outdoor clothing stores will drive which features will be engineered and selected, ultimately answering the hypthesis.
 *  Data was split into training and testing sets using train_test_split and a random state of 24. This will assist in evaluating the performance of the model in relation to the dataset.
 *  A linear regression model was chosen to best illustrate correlation between brewery location and outdoor clothing store location. Is there a strong relationship between the two? The benefits of using a linear regression is readability and abiility to answer basic questions. Limitations of a linear regression model will be sensitivity to outliers. With more time we would like to also set up a cluster model.
+
+<!--Significant correlation
+## Conclusions
+
+- The amount of breweries and outdoor clothing stores in a location have significant impact on each other. Locations with a high count of breweries are good opportunities .
+
+### Future hypotheses
+
+With a significant correlation of breweries and outdoor stores, there are possible other exploratory hypotheses to add value to the analysis. 
+- Any establishment serving alcohol (not solely breweries) will have a strong correlation to outdoor stores leading to improved market opportunity.
+- Hybrid brewery and outdoor clothing stores would be a profitable business expansion opportunity.
+
+-->
+
+<!--No or low correlation: The next steps
+
+## Conclusions
+
+- The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two
+variables. 
+- Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. There is also the possibility that the original hypothesis is biased towards being a Pacific Northwest phenomemom. 
+- 
+
+### Future hypotheses
+
+With the low correlation of breweries and outdoor stores, the team recommends looking into possible other hypotheses.
+- Areas with higher levels of disposable income have greater opportunities for outdoor clothing stores.
+- Areas with high foot traffic have more outdoor stores and/or breweries.
+- Areas with both higher income and lower real estate costs have more breweries or outdoor clothing stores.
+- Breweries with numerous non-alcoholic options positively impact outdoor clothing stores in "dry counties".
+
+
+
+-->
 
 ## Data Sources
 
