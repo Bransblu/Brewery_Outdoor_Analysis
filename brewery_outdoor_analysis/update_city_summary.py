@@ -3,7 +3,7 @@ import pandas as pd
 from database_connection import ENGINE
 
 def update_city_summary():
-    query = open('sql/city_state_level_summary.sql', 'r')
+    query = open('brewery_outdoor_analysis/sql/city_state_level_summary.sql', 'r')
 
     df = pd.read_sql(
         query.read(),
