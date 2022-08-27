@@ -1,11 +1,11 @@
 with breweries_cleaned as (
     SELECT DISTINCT 
          yelp_id,
-	       name, 
+	     name, 
          original_search_city,
-	       yelp_city,
-	       rating,
-	       state
+	     yelp_city,
+	     rating,
+	     state
     FROM breweries
     WHERE is_closed = FALSE
 ),
@@ -13,11 +13,11 @@ with breweries_cleaned as (
 outdoor_stores_cleaned as (
     SELECT DISTINCT 
          yelp_id,
-	       name, 
+	     name, 
          original_search_city,
-	       yelp_city,
-	       rating,
-	       state
+	     yelp_city,
+	     rating,
+	     state
     FROM outdoor 
     WHERE is_closed = FALSE
 ),
@@ -101,13 +101,13 @@ joined_summary as (
 		)
 ),
 
-final as ( -- filter for top US cities
-  SELECT 
-       joined_summary.*, 
-		   top_us_cities.population::BIGINT,
-       top_us_cities.lat,
-       top_us_cities.lon,
-		   NOW() as ts_updated
+final as (  -- filter for top US cities
+    SELECT 
+         joined_summary.*, 
+		 top_us_cities.population::BIGINT,
+         top_us_cities.lat,
+         top_us_cities.lon,
+		 NOW() as ts_updated
 	FROM joined_summary
 	JOIN top_us_cities
 		ON (
