@@ -34,7 +34,6 @@ With a significant correlation of breweries and outdoor stores, there are possib
 
 -->
 
-<!--No or low correlation: The next steps
 
 ## Conclusions
 
@@ -52,8 +51,6 @@ With the low correlation of breweries and outdoor stores, the team recommends lo
 - Breweries with numerous non-alcoholic options positively impact outdoor clothing stores in "dry counties".
 
 
-
--->
 
 ## Data Sources
 
