@@ -1,23 +1,23 @@
 with breweries_cleaned as (
-    SELECT DISTINCT ON (yelp_id) 
+    SELECT DISTINCT 
          yelp_id,
-	       name, 
+	     name, 
          original_search_city,
-	       yelp_city,
-	       rating,
-	       state
+	     yelp_city,
+	     rating,
+	     state
     FROM breweries
     WHERE is_closed = FALSE
 ),
 
 outdoor_stores_cleaned as (
-    SELECT DISTINCT ON (yelp_id) 
+    SELECT DISTINCT 
          yelp_id,
-	       name, 
+	     name, 
          original_search_city,
-	       yelp_city,
-	       rating,
-	       state
+	     yelp_city,
+	     rating,
+	     state
     FROM outdoor 
     WHERE is_closed = FALSE
 ),
@@ -30,7 +30,7 @@ demographic_summary as (
 	     MIN(income.total_income)::INTEGER as min_income,
 	     MAX(income.total_income)::INTEGER as max_income, 
 	     PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as median_income,
-	     PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as    first_quartile_income,
+	     PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as first_quartile_income,
 	     PERCENTILE_CONT(0.75) WITHIN GROUP(ORDER BY income.total_income)::INTEGER as third_quartile_income
 	FROM zip_codes_cleaned 
 	JOIN income_data income
@@ -101,13 +101,13 @@ joined_summary as (
 		)
 ),
 
-final as ( -- filter for top US cities
-  SELECT 
-       joined_summary.*, 
-		   top_us_cities.population::BIGINT,
-       top_us_cities.lat,
-       top_us_cities.lon,
-		   NOW() as ts_updated
+final as (  -- filter for top US cities
+    SELECT 
+         joined_summary.*, 
+		 top_us_cities.population::BIGINT,
+         top_us_cities.lat,
+         top_us_cities.lon,
+		 NOW() as ts_updated
 	FROM joined_summary
 	JOIN top_us_cities
 		ON (
@@ -118,4 +118,3 @@ final as ( -- filter for top US cities
 
 SELECT *
 FROM final
-ORDER BY breweries_mean_rating
