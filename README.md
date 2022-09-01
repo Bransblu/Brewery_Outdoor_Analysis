@@ -41,10 +41,8 @@ With a significant correlation of breweries and outdoor stores, there are possib
 
 
 - The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two variables based on the machine learning model. 
-- Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. We observed that regionally there is a correlation between the two varialbes and specific regions.
-=======
-- The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two
-variables. 
+- Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. We observed that regionally there is a correlation between the two variables and specific regions.
+- The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two variables. 
 - Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. There is also the possibility that the original hypothesis is biased towards being a Pacific Northwest phenomemom. 
 
 ### Future hypotheses
