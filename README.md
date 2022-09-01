@@ -13,8 +13,6 @@ Our team believed there was potential for retail growth based on locations in th
 - What is the potential market opportunity for clothing store expansion based on brewery locations?
 - What is the potential market opportunity for brewery expansion based on outdoor clothing locations?
 
-[Tableau Dashboard](https://public.tableau.com/shared/SJKF82J8X?:display_count=n&:origin=viz_share_link)
-
 ## Machine Learning Model
 
 *  Data is preprocessed and cleaned by removing unneeded columns, merging zip code/cities datasets, and limiting dataset to the top 1,000 most populated cities.
@@ -22,6 +20,8 @@ Our team believed there was potential for retail growth based on locations in th
 *  The importance of correlation between breweries and outdoor clothing stores will drive which features will be engineered and selected, ultimately answering the hypothesis.
 *  Data was split into training and testing sets using train_test_split and a random state of 24. This will assist in evaluating the performance of the model in relation to the dataset.
 *  A linear regression model was chosen to best illustrate correlation between brewery location and outdoor clothing store location. Is there a strong relationship between the two? The benefits of using a linear regression is readability and abiility to answer basic questions. Limitations of a linear regression model will be sensitivity to outliers. 
+
+![Linear Regression](brewery_outdoor_analysis/misc/linearreg.png)
 
 [Brewery-Outdoor Analysis-Machine Learning Model](https://github.com/Bransblu/Brewery_Outdoor_Analysis/blob/e16a03d1e5d09fd6af2d59606a65604d9586c63f/brewery_outdoor_analysis/machine_learning_mockup.ipynb)
 
