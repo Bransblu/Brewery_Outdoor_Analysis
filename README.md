@@ -13,6 +13,14 @@ Our team believed there was potential for retail growth based on locations in th
 - What is the potential market opportunity for clothing store expansion based on brewery locations?
 - What is the potential market opportunity for brewery expansion based on outdoor clothing locations?
 
+## Dashboard
+
+[Tableau Dashboard](https://public.tableau.com/shared/SJKF82J8X?:display_count=n&:origin=viz_share_link)
+
+![Dashboard 1](brewery_outdoor_analysis/misc/Brewery_Story.png)
+
+![Dashboard 2](brewery_outdoor_analysis/misc/Brewery_Story_2.png)
+
 ## Machine Learning Model
 
 *  Data is preprocessed and cleaned by removing unneeded columns, merging zip code/cities datasets, and limiting dataset to the top 1,000 most populated cities.
