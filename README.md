@@ -13,14 +13,6 @@ Our team believed there was potential for retail growth based on locations in th
 - What is the potential market opportunity for clothing store expansion based on brewery locations?
 - What is the potential market opportunity for brewery expansion based on outdoor clothing locations?
 
-## Dashboard
-
-[Tableau Dashboard](https://public.tableau.com/shared/SJKF82J8X?:display_count=n&:origin=viz_share_link)
-
-![Dashboard 1](brewery_outdoor_analysis/misc/Brewery_Story.png)
-
-![Dashboard 2](brewery_outdoor_analysis/misc/Brewery_Story_2.png)
-
 ## Machine Learning Model
 
 *  Data is preprocessed and cleaned by removing unneeded columns, merging zip code/cities datasets, and limiting dataset to the top 1,000 most populated cities.
@@ -52,8 +44,6 @@ With a significant correlation of breweries and outdoor stores, there are possib
 
 - The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two variables based on the machine learning model. 
 - Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. We observed that regionally there is a correlation between the two variables and specific regions.
-- The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two
-variables. 
 - Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. There is also the possibility that the original hypothesis is biased towards being a Pacific Northwest phenomemom. 
 
 ### Future hypotheses
