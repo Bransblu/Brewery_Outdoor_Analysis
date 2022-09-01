@@ -77,3 +77,13 @@ https://www.unitedstateszipcodes.org/zip-code-database/
 - Brandon Driver
 - Tim Nilsen
 - Warren Pavlat
+
+## Links
+
+#### Presentation
+
+Google Slides presentation available [here](https://docs.google.com/presentation/d/1N3_KahNSpnEqOZBYMtTPWf6kyhb2pmcyFkglY7vouec/edit#slide=id.g14a5ef1647b_0_0).
+
+#### Tableau
+
+Tableau visualizations available for download [here](https://public.tableau.com/views/Brewery_Analysis_Dash/Brew-to-Outdoorpercap?:language=en-US&:display_count=n&:origin=viz_share_link).
