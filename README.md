@@ -80,6 +80,8 @@ https://www.irs.gov/pub/irs-soi/19zpallagi.csv
 Includes population data, used to create our top 1000 cities table.
 https://www.unitedstateszipcodes.org/zip-code-database/
 
+[Presentation](https://docs.google.com/presentation/d/1N3_KahNSpnEqOZBYMtTPWf6kyhb2pmcyFkglY7vouec/edit?usp=sharing)
+
 ## Collaborators
 
 - Brandon Clark
