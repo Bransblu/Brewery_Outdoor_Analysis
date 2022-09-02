@@ -15,11 +15,19 @@ Our team believed there was potential for retail growth based on locations in th
 
 ## Dashboard
 
+### Overview
 [Tableau Dashboard](https://public.tableau.com/shared/SJKF82J8X?:display_count=n&:origin=viz_share_link)
 
 ![Dashboard 1](brewery_outdoor_analysis/misc/Brewery_Story.png)
 
 ![Dashboard 2](brewery_outdoor_analysis/misc/Brewery_Story_2.png)
+
+---
+### States with **High** R-Squared Values (>0.7)
+![Dashboard 3](brewery_outdoor_analysis/misc/high-rsquared-states.png)
+
+### States with **Low** R-Squared Values (<0.09)
+![Dashboard 4](brewery_outdoor_analysis/misc/low-rsquared-states.png)
 
 ## Machine Learning Model
 
