@@ -13,6 +13,22 @@ Our team believed there was potential for retail growth based on locations in th
 - What is the potential market opportunity for clothing store expansion based on brewery locations?
 - What is the potential market opportunity for brewery expansion based on outdoor clothing locations?
 
+## Dashboard
+
+### Overview
+[Tableau Dashboard](https://public.tableau.com/shared/SJKF82J8X?:display_count=n&:origin=viz_share_link)
+
+![Dashboard 1](brewery_outdoor_analysis/misc/Brewery_Story.png)
+
+![Dashboard 2](brewery_outdoor_analysis/misc/Brewery_Story_2.png)
+
+---
+### States with **High** R-Squared Values (>0.7)
+![Dashboard 3](brewery_outdoor_analysis/misc/high-rsquared-states.png)
+
+### States with **Low** R-Squared Values (<0.09)
+![Dashboard 4](brewery_outdoor_analysis/misc/low-rsquared-states.png)
+
 ## Machine Learning Model
 
 *  Data is preprocessed and cleaned by removing unneeded columns, merging zip code/cities datasets, and limiting dataset to the top 1,000 most populated cities.
@@ -20,6 +36,8 @@ Our team believed there was potential for retail growth based on locations in th
 *  The importance of correlation between breweries and outdoor clothing stores will drive which features will be engineered and selected, ultimately answering the hypothesis.
 *  Data was split into training and testing sets using train_test_split and a random state of 24. This will assist in evaluating the performance of the model in relation to the dataset.
 *  A linear regression model was chosen to best illustrate correlation between brewery location and outdoor clothing store location. Is there a strong relationship between the two? The benefits of using a linear regression is readability and abiility to answer basic questions. Limitations of a linear regression model will be sensitivity to outliers. 
+
+![Linear Regression](brewery_outdoor_analysis/misc/linearreg.png)
 
 [Brewery-Outdoor Analysis-Machine Learning Model](https://github.com/Bransblu/Brewery_Outdoor_Analysis/blob/e16a03d1e5d09fd6af2d59606a65604d9586c63f/brewery_outdoor_analysis/machine_learning_mockup.ipynb)
 
@@ -42,7 +60,6 @@ With a significant correlation of breweries and outdoor stores, there are possib
 
 - The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two variables based on the machine learning model. 
 - Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. We observed that regionally there is a correlation between the two variables and specific regions.
-- The amount of breweries and outdoor clothing stores in a location have little impact on each other. While customers may like both shops, there is not a strong correlation to the two variables. 
 - Cities similar to Portland, Oregon may be outliers and simply have an above average amount of both breweries and outdoor stores, independent of each other. There is also the possibility that the original hypothesis is biased towards being a Pacific Northwest phenomemom. 
 
 ### Future hypotheses
@@ -70,6 +87,18 @@ https://www.irs.gov/pub/irs-soi/19zpallagi.csv
 #### **Zip Code Dataset**
 Includes population data, used to create our top 1000 cities table.
 https://www.unitedstateszipcodes.org/zip-code-database/
+
+[Presentation](https://docs.google.com/presentation/d/1N3_KahNSpnEqOZBYMtTPWf6kyhb2pmcyFkglY7vouec/edit?usp=sharing)
+
+## Tools
+
+- Python (including `pandas`, `numpy`, `sklearn`, [`yelpapi`](https://github.com/lanl/yelpapi, `matplotlib`, `sqlalchemy`)
+- Tableau
+- Jupyter Notebook / Lab
+- PostgreSQL (including pgAdmin)
+- Google Slides
+- LucidChart
+
 
 ## Collaborators
 
