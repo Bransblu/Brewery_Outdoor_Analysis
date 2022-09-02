@@ -90,7 +90,7 @@ https://www.unitedstateszipcodes.org/zip-code-database/
 
 ## Tools
 
-- Python (including `pandas`, `numpy`, `sklearn`, [`yelpapi`](https://github.com/lanl/yelpapi, `matplotlib`, `sqlalchemy`)
+- Python (including `pandas`, `numpy`, `sklearn`, [`yelpapi`](https://github.com/lanl/yelpapi), `matplotlib`, `sqlalchemy`)
 - Tableau
 - Jupyter Notebook / Lab
 - PostgreSQL (including pgAdmin)
